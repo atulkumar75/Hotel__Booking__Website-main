@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="main-container">  <!--  main div -->
+<!----------------------------------------------------------------------------------------------------> 
+
+<header id="header">  <!--  header div -->
+  
+</header>    <!--  header div -->
+
+<!----------------------------------------------------------------------------------------------------> 
+
+<div class="payment-content">  <!--  content div -->
+
+<div id="hotel-payment">
+</div>
+
+<div id="Customer-Detail">
+    <div id="customer-details">
+            <b>Name:</b> <span id="NameofCustomer"></span>
+            <br>
+            <br>
+            <b>Number of Adults:</b> <span id="NumberOfAdults"></span>
+            <br>
+            <br>
+            <b>Check-in date:</b> <span id="Check_in_date"></span>
+            <br>
+            <br>
+             <b>Check-out date:</b> <span id="Check_out_date"></span>
+   </div>
+
+    <div id="payment-details">
+            <b>Traffic Breakdown:</b> <span id="breakDown"></span>
+            <br>
+            <br>
+            <b>Total Amount:</b> <span id="payment"></span><br>
+    </div>
+
+     <div>
+          <button class="btn btn-success" onclick="paymentStatus()" id="payNow-Button" disabled >Pay Now</button> 
+     </div>
+</div>
+    </div> <!--  content div -->
+
+
+<!----------------------------------------------------------------------------------------------------> 
+
+<div id="footer">   <!--  footer div -->
+   <!--  social Media div -->
+
+</div>  <!--  footer div -->
+
+<form>
+<div class="modal fade" id="loginModel" tabindex="-1">
+</div>
+</form>
+
+<div class="modal fade" id="contactModal" tabindex="-1">
+
+</div>
+<!----------------------------------------------------------------------------------------------------> 
+</div>   <!--  main div --> 
+<div class="loader" id="loader"></div>
+
+<script src="scripts/common.js"></script>
+    <script src="scripts/payment.js"></script> 
+</body>
+</html>

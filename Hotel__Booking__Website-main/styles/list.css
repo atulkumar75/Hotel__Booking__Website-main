@@ -1,0 +1,80 @@
+#Hotel-images {
+  height: 200px;
+  width: 250px;
+}
+#hotel-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 10%;
+}
+#hotel-list-cards {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+  margin: 2%;
+}
+.list-content {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  overflow: auto;
+}
+#map-view {
+  display: block;
+}
+li {
+  list-style: none;
+  padding: 0 3%;
+  margin: 0 1%;
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+figcaption{
+  padding-left: 4%;
+}
+.list-content li{
+  padding: 0 !important;
+}
+#hotel-list-cards:hover{
+  background-color: rosybrown;
+}
+figcaption{
+  padding: 2%;
+}
+@media(min-width:576px) and (max-width:768px){
+   #hotel-list{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+   }
+   #map-view img{
+    width: 100%;
+  }
+}
+@media(max-width:576px){
+  #hotel-list{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    margin: 0 5%;
+   }
+
+  #hotel-list-cards{
+    display: flex;
+    flex-direction: column; 
+    margin: 4% 0;
+  } 
+  #map-view img{
+    width: 100%;
+  }
+  #Hotel-images {
+    height: 200px;
+    width: 100%;
+  }
+  #hotel-list-cards figcaption{
+    padding: 4%;
+  }
+}

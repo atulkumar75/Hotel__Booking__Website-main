@@ -1,0 +1,115 @@
+#city-image1,
+#city-image2,
+#city-image3,
+#city-image4,
+#city-image5,
+#city-image6,
+#city-image7,
+#city-image8 {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+.search-bar {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#city-cards1,#city-cards2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 15%;
+}
+#overlay {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#cards {
+  padding: 4%;
+  position: relative;
+  width: 50%;
+  visibility: visible;
+}
+#text {
+  color: #f1f1f1;
+}
+.index-content {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+#search input {
+  border: 1px solid #ffffff;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 100%;
+}
+input:focus{
+ outline: none;
+}
+
+#view-more {
+  display: flex;
+  justify-content: center;
+}
+#cards:hover #overlay{
+     opacity: 1;
+}
+#search{
+  width: 400px;
+  position: relative;
+}
+.searchItem{
+  background-color: #f1f1f1;
+  font-size: 16px;
+  border-radius: 12px;
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow: auto;
+}
+.suggestion{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 10px;
+  margin: 0;
+}
+.suggestion:hover{
+  background-color: #e0e0e0;
+}
+@media(max-width:576px){
+  #city-cards1,#city-cards2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #cards{
+    padding: 4% 0;
+    width: auto;
+  }
+  #search{
+    width: 200px;
+  }
+}
+@media(min-width:576px) and (max-width:768px) {
+  #city-cards1,#city-cards2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 15px; 
+    justify-content: space-evenly;
+  } 
+}
